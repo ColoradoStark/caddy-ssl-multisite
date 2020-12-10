@@ -10,7 +10,13 @@ First change the working directory of your server to the directory that you want
 
 `docker container run --name caddy-multisite-server -d -p 80:80 -p 443:443 -v $(pwd):/var/www coloradostark/caddy-ssl-multisite sh`
 
-When the command finishes executing you should have a caddy server running
+When the command finishes executing you should have a caddy server running. Type the following:
+
+`wget https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/websites.tar`
+
+and then type:
+
+`tar -xvf websites.tar`
 
 It will sync the path of the public HTML sites to a path on the host machine,
 so that you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to access the container directly.
