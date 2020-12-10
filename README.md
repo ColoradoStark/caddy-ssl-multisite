@@ -2,6 +2,8 @@
 
 A simple example of a caddy web server running multiple sites over ssl running in a docker container. This repo is the source used to build the docker container coloradostark/caddy-ssl-multisite.
 
+[(https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/caddy.jpg)]
+
 ## Instructions
 
 First change the working directory of your server to the directory that you want to sync to the caddy server's web directory (i.e. /home/user/somedirectory). From that directory enter the following command:
