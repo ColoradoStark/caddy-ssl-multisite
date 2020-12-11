@@ -9,7 +9,7 @@ site1.com {
         file_server
 }
 
-ixvc.com {
+site2.com {
         root * /var/www/site_2
         file_server
 }
