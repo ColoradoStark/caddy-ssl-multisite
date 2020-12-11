@@ -14,9 +14,13 @@ That is all you need to do to get the server running. Now you will need to enter
 
 `docker container exec -it caddy-multisite-server sh`
 
-`vi /etc/caddy/Caddyfile`
+`cd /etc/caddy`
+
+`vi Caddyfile`
 
 That will give you access to the config file using the vi editor. https://www.cs.colostate.edu/helpdocs/vi.html Change the name of the websites to your domains. Quit and save.
+
+`caddy reload`
 
 That command will setup a caddy server configured to host multiple sites. You will now have 3 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directory is synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to access the container directly.
 
