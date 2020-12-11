@@ -8,7 +8,9 @@ RUN mkdir /var/www \
 WORKDIR /var/www
 
 RUN wget https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/Caddyfile \
-    && mv Caddyfile /etc/caddy/Caddyfile
+    && mv Caddyfile /etc/caddy/Caddyfile \
+    && mkdir /var/www \
+    && chown -R root /var/www
 
 
 

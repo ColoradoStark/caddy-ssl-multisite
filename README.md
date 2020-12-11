@@ -1,6 +1,6 @@
 # caddy-ssl-multisite
 
-A simple example of a caddy web server running multiple sites over ssl running in a docker container. This repo is the source used to build the docker container coloradostark/caddy-ssl-multisite.
+A simple example of a caddy web server running multiple sites over ssl running in a docker container. This repo is the source used to build the docker container coloradostark/caddy-ssl-multisite. Caddy is an open source web server with automatic HTTPS written in Go. It will automatically get Let's Encrypt free SSL certificates, and automatically update them for you.
 
 ![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/caddy.jpg)
 
@@ -22,9 +22,7 @@ That will give you access to the config file using the vi editor. https://www.cs
 
 `caddy reload`
 
-That command will setup a caddy server configured to host multiple sites. You will now have 3 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directory is synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to access the container directly.
-
-Caddy is an open source web server with automatic HTTPS written in Go. It will automatically get Let's Encrypt free SSL certificates, and automatically update them for you.
+You will now have 2 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directory is synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to access the container directly.
 
 NOTE: If you plan to add a large number of domains, be mindful that Let's Encrypt has rate limits. For more info on Let's encrypt rate limits see the following:
 
