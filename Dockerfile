@@ -3,13 +3,12 @@ FROM caddy:2.2.1
 EXPOSE 80 443
 
 RUN mkdir /var/www \
-    && apk add wget \
-    && apk add git
+    && apk add wget 
 
 WORKDIR /var/www
 
-RUN git clone https://github.com/ColoradoStark/caddy-ssl-multisite.git \
-    && mv caddy-ssl-multisite/Caddyfile /etc/caddy/Caddyfile
+RUN wget https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/Caddyfile \
+    && mv Caddyfile /etc/caddy/Caddyfile
 
 
 
