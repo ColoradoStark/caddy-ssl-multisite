@@ -10,18 +10,15 @@ First change the working directory of your server to the directory that you want
 
 `wget -qO - https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/caddy-setup.sh | bash`
 
-`docker container run --name caddy-multisite-server -d -p 80:80 -p 443:443 -v $(pwd):/var/www coloradostark/caddy-ssl-multisite sh`
+That is all you need to do to get the server running. Now you will need to enter the container and edit the config file to match your site names. Type the following command:
 
-When the command finishes executing you should have a caddy server running. Type the following:
+`docker container exec -it caddy-multisite-server sh`
 
-`wget https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/websites.tar`
+`vi /etc/caddy/Caddyfile`
 
-and then type:
+That will give you access to the config file using the vi editor. https://www.cs.colostate.edu/helpdocs/vi.html Change the name of the websites to your domains. Quit and save.
 
-`tar -xvf websites.tar`
-
-It will sync the path of the public HTML sites to a path on the host machine,
-so that you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to access the container directly.
+That command will setup a caddy server configured to host multiple sites. You will now have 3 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directory is synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to access the container directly.
 
 Caddy is an open source web server with automatic HTTPS written in Go. It will automatically get Let's Encrypt free SSL certificates, and automatically update them for you.
 

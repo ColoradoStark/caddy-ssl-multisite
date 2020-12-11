@@ -1,33 +1,15 @@
-# Enable Hosting Multiple Websites
-
 localhost {
         encode zstd gzip
         templates
         file_server browse
 }
 
-# Setup 2 websites as file servers  
-
-site-1.com {
+site1.com {
         root * /var/www/site_1
         file_server
 }
 
-site-2.com {
+ixvc.com {
         root * /var/www/site_2
         file_server
 }
-
-
-
-
-
-
-
-##########################################
-# TODO - Setup 3rd website as PHP server
-##########################################
-
-##########################################
-# TODO - Setup 4th website as Node server
-##########################################
