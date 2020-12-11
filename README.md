@@ -8,6 +8,8 @@ A simple example of a caddy web server running multiple sites over ssl running i
 
 First change the working directory of your server to the directory that you want to sync to the caddy server's web directory (i.e. /home/user/somedirectory). From that directory enter the following command:
 
+`wget -qO - https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/caddy-setup.sh | bash`
+
 `docker container run --name caddy-multisite-server -d -p 80:80 -p 443:443 -v $(pwd):/var/www coloradostark/caddy-ssl-multisite sh`
 
 When the command finishes executing you should have a caddy server running. Type the following:
