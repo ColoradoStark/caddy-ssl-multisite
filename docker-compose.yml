@@ -1,22 +1,10 @@
-version: '2'
+version: "2"
 
 services:
-  drupal:
-    image: drupal:8.8.2
+  caddy:
+    image: coloradostark/caddy-ssl-multisite
     ports:
-      - "8080:80"
-    volumes:
-      - drupal-modules:/var/www/html/modules
-      - drupal-profiles:/var/www/html/profiles       
-      - drupal-sites:/var/www/html/sites      
-      - drupal-themes:/var/www/html/themes
-  postgres:
-    image: postgres:12.1
-    environment:
-      - POSTGRES_PASSWORD=mypasswd
-
-volumes:
-  drupal-modules:
-  drupal-profiles:
-  drupal-sites:
-  drupal-themes:
+      - "80:80"
+      - "443:443"
+  nginx:
+    image: nginx
