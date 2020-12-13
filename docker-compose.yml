@@ -6,5 +6,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-  nginx:
-    image: nginx
+  php-nginx:
+    image:
+    restart: always
