@@ -13,5 +13,17 @@ services:
     restart: always
     volumes:
       - ./www-data:/var/www
+  node-server:
+    image: node:14.15.3-alpine3.12
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./node-app:/home/node/app
+    expose:
+      - "8080"
+    command: "npm start"
 volumes:
   www-data:
+  node-app:

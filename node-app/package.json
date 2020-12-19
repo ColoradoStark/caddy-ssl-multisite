@@ -1,0 +1,19 @@
+{
+  "name": "node-demo",
+  "version": "0.0.1",
+  "description": "Demo to Show that node works",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColoradoStark/caddy-ssl-multisite.git"
+  },
+  "author": "Colorado Stark",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ColoradoStark/caddy-ssl-multisite/issues"
+  },
+  "homepage": "https://github.com/ColoradoStark/caddy-ssl-multisite#readme"
+}
