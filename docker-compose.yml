@@ -12,7 +12,7 @@ services:
     image: php:7.4.13-fpm-alpine
     restart: always
     volumes:
-      - ./www-data:/var/www
+      - www-data:/var/www
   node-server:
     image: node:14.15.3-alpine3.12
     user: "node"
@@ -20,10 +20,20 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - ./node-app:/home/node/app
+      - node-app:/home/node/app
     expose:
       - "8080"
     command: "npm start"
 volumes:
   www-data:
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "./www-data"
   node-app:
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "./node-app"
