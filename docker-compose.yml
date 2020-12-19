@@ -6,6 +6,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-  php-nginx:
+  php-server:
     image: php:7.4.13-fpm-alpine
     restart: always
