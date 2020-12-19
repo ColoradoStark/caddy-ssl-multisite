@@ -1,6 +1,8 @@
 #!/bin/bash
 
-docker container run --name caddy-multisite-server -d -p 80:80 -p 443:443 -v $(pwd):/var/www coloradostark/caddy-ssl-multisite
+wget https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/docker-compose.yml
+
+docker-compose up
 
 wget https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/websites.tar
 
