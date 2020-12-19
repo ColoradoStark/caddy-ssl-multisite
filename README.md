@@ -8,8 +8,6 @@ DEPENDENCIES: Server with docker installed, 2 domains pointed at the server runn
 
 ![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/caddy.jpg)
 
-![Diagram](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/diagram.jpg)
-
 ## Instructions
 
 First change the working directory of your server to the directory that you want to sync to the caddy server's web directory (i.e. /home/user/somedirectory).  
@@ -35,3 +33,5 @@ Your 2 sites should be working now over SSL.  You will now have 2 folders in you
 NOTE: If you plan to add a large number of domains, be mindful that Let's Encrypt has rate limits. For more info on Let's encrypt rate limits see the following:
 
 https://letsencrypt.org/docs/rate-limits/
+
+![Diagram](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/diagram.jpg)
