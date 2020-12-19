@@ -12,7 +12,7 @@
     
     <?php 
         // Test if PHP works
-        echo '<h1><p>If you see this message PHP is working</p></h1>';
+        echo '<h1><p>If you see this message in Bold PHP is working</p></h1>';
     ?>
 
 
