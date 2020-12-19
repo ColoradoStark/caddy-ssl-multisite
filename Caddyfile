@@ -4,17 +4,22 @@ localhost {
         file_server browse
 }
 
-static-site1.com {
+http://static-site1.com {
         root * /var/www/site_1
         file_server
 }
 
-php-site.com {
+http://static-site2.com {
+        root * /var/www/site_2
+        file_server
+}
+
+http://php-site.com {
         root * /var/www/php_site
         php_fastcgi * php-server:9000
         file_server
 }
 
-node-site.com {
+http://node-site.com {
         reverse_proxy node-server:8080
 }
