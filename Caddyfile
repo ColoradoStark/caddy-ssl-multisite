@@ -13,3 +13,9 @@ site2.com {
         root * /var/www/site_2
         file_server
 }
+
+php-site.com {
+        root * /var/www/php_site
+        php_fastcgi * php-server:9000
+        file_server
+}
