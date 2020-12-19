@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
   caddy:
@@ -7,10 +7,11 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - www-data:/var/www
+      - ./www-data:/var/www
   php-server:
     image: php:7.4.13-fpm-alpine
     restart: always
     volumes:
-      - www-data:/var/www
-volumes: www-data:${pwd}
+      - ./www-data:/var/www
+volumes:
+  www-data:
