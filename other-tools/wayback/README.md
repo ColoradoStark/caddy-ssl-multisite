@@ -1,7 +1,7 @@
 # Dockerfile to build - Wayback Machine Downloader for Ubuntu
 #### Original Repository Link https://github.com/hartator/wayback-machine-downloader
 
-Download an entire website from the Internet Archive Wayback Machine.
+This program will download an entire website from the Internet Archive Wayback Machine, and strip out all Internet Archive, tags, data, URLs, etc.
 
 ## Using the Docker image
 
