@@ -1,9 +1,6 @@
 # Dockerfile to build - Wayback Machine Downloader for Ubuntu
 ## Original Repository Link https://github.com/hartator/wayback-machine-downloader
 
-[![Gem Version](https://badge.fury.io/rb/wayback_machine_downloader.svg)](https://rubygems.org/gems/wayback_machine_downloader/)
-[![Build Status](https://travis-ci.org/hartator/wayback-machine-downloader.svg?branch=master)](https://travis-ci.org/hartator/wayback-machine-downloader)
-
 Download an entire website from the Internet Archive Wayback Machine.
 
 ## Using the Docker image
