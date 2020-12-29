@@ -1,4 +1,6 @@
 # Dockerfile to build - Wayback Machine Downloader for Ubuntu
+!https://github.com/ColoradoStark/caddy-ssl-multisite/blob/main/other-tools/wayback/logo_wayback_210x77.png
+
 #### Original Repository Link https://github.com/hartator/wayback-machine-downloader
 
 This program will download an entire website from the Internet Archive Wayback Machine, and strip out all Internet Archive, tags, data, URLs, etc.
