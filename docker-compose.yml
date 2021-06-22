@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   caddy:
-    image: coloradostark/caddy-ssl-multisite:0.21
+    image: coloradostark/caddy-ssl-multisite
     ports:
       - "80:80"
       - "443:443"
@@ -54,5 +54,3 @@ volumes:
       o: "bind"
       device: "./node-app"
   db_data: {}
-
-  
