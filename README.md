@@ -6,7 +6,7 @@ A simple example of a caddy web server running multiple sites over ssl running i
 
 DEPENDENCIES: Server with docker installed, 2 domains pointed at the server running docker.
 
-![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/caddy.jpg)
+![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/caddy.jpg)
 
 ## Instructions
 
@@ -34,4 +34,4 @@ NOTE: If you plan to add a large number of domains, be mindful that Let's Encryp
 
 https://letsencrypt.org/docs/rate-limits/
 
-![Diagram](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/main/diagram.jpg)
+![Diagram](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/diagram.jpg)
