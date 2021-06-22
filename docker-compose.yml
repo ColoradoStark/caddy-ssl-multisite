@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 
 services:
   caddy:
@@ -24,6 +24,22 @@ services:
     expose:
       - "8080"
     command: "npm start"
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    env_file:
+      - db-variables.env
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    restart: always
+    env_file:
+      - wp-variables.env
+    volumes:
+      - ./wp-content:/var/www/html/wp-content     
 volumes:
   www-data:
     driver: local
@@ -37,3 +53,4 @@ volumes:
       type: "none"
       o: "bind"
       device: "./node-app"
+  db_data: {}

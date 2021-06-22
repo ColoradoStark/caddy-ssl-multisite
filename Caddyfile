@@ -23,3 +23,7 @@ http://php-site.com {
 http://node-site.com {
         reverse_proxy node-server:8080
 }
+
+http://www.wordpress-site.com {
+	reverse_proxy hipster_axe_wordpress_1:80
+}
