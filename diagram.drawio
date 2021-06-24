@@ -1,6 +1,6 @@
-<mxfile modified="2021-06-24T09:43:52.306Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="jQ5-FhqNcpS3jyK7Ba1O" version="13.6.0" type="github">
+<mxfile modified="2021-06-24T09:50:08.033Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="pQg0XhN59Ux5LQ_9qsWI" version="13.6.0" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,11 +22,8 @@
         <mxCell id="umeH0HnyxNXrOA5HGb2K-1" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;&lt;br&gt;OPEN PORTS&lt;br&gt;&amp;nbsp;80 and 443&lt;br&gt;forward to Caddy&lt;br&gt;Container&lt;/b&gt;&lt;/font&gt;" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#5A30B5;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.endpoint;" parent="1" vertex="1">
           <mxGeometry x="205.5" y="443.5" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="umeH0HnyxNXrOA5HGb2K-2" value="DNS Record&lt;br&gt;points Domain&amp;nbsp;&lt;br&gt;To your server" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#5A30B5;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.hosted_zone;" parent="1" vertex="1">
-          <mxGeometry x="30" y="443.5" width="78" height="77" as="geometry" />
-        </mxCell>
         <mxCell id="umeH0HnyxNXrOA5HGb2K-7" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D05C17;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" parent="1" vertex="1">
-          <mxGeometry x="323.64" y="240" width="249.61" height="160" as="geometry" />
+          <mxGeometry x="316" y="230" width="265.22" height="170" as="geometry" />
         </mxCell>
         <mxCell id="umeH0HnyxNXrOA5HGb2K-9" value="PHP" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D05C17;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" parent="1" vertex="1">
           <mxGeometry x="820.2" y="501" width="78" height="50" as="geometry" />
@@ -34,8 +31,8 @@
         <mxCell id="umeH0HnyxNXrOA5HGb2K-10" value="Node JS" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D05C17;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_3;" parent="1" vertex="1">
           <mxGeometry x="820.2" y="600" width="78" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="umeH0HnyxNXrOA5HGb2K-13" value="&lt;h1&gt;Caddy SSL Multi-Site&lt;/h1&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;Manages and updates free SSL certificates for all domains in it&#39;s config file&lt;/li&gt;&lt;li&gt;Re-Routes all HTTP requests to HTTPS&lt;/li&gt;&lt;li&gt;Connects the domains setup as file servers to the correct folder&lt;/li&gt;&lt;li&gt;Connects the domains setup as reverse proxy to the correct container&lt;/li&gt;&lt;/ol&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="313.45" y="400" width="270" height="410" as="geometry" />
+        <mxCell id="umeH0HnyxNXrOA5HGb2K-13" value="&lt;h1&gt;Caddy&amp;nbsp;SSL Multi-Site&lt;br&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Manages and updates free SSL certificates for all domains&amp;nbsp;&lt;/li&gt;&lt;li&gt;Re-Routes all HTTP requests to HTTPS&lt;/li&gt;&lt;li&gt;Connects the domains setup as file servers to the correct folder&lt;/li&gt;&lt;li&gt;Connects the domains setup as reverse proxy to the correct container&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="313.45" y="400" width="270" height="390" as="geometry" />
         </mxCell>
         <mxCell id="umeH0HnyxNXrOA5HGb2K-17" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1.026;exitY=0.65;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="umeH0HnyxNXrOA5HGb2K-9" target="umeH0HnyxNXrOA5HGb2K-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -56,16 +53,10 @@
           <mxGeometry x="1002" y="588.5" width="78" height="73" as="geometry" />
         </mxCell>
         <mxCell id="umeH0HnyxNXrOA5HGb2K-6" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#277116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.file_system;" parent="1" vertex="1">
-          <mxGeometry x="828" y="260" width="78" height="73" as="geometry" />
+          <mxGeometry x="808" y="270" width="78" height="73" as="geometry" />
         </mxCell>
         <mxCell id="umeH0HnyxNXrOA5HGb2K-8" value="Web Server" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="1219" y="588.5" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="umeH0HnyxNXrOA5HGb2K-44" value="Port 22&lt;br&gt;Behind Firewall" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1060" y="850" width="131" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="umeH0HnyxNXrOA5HGb2K-48" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#5A30B5;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.endpoint;" parent="1" vertex="1">
-          <mxGeometry x="1001" y="890" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="umeH0HnyxNXrOA5HGb2K-54" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="5tZSmuqax2kPrNc6n6yo-12" target="umeH0HnyxNXrOA5HGb2K-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -78,9 +69,6 @@
             <mxPoint x="580" y="600" as="sourcePoint" />
             <mxPoint x="630" y="550" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="umeH0HnyxNXrOA5HGb2K-56" value="" style="image;html=1;image=img/lib/clip_art/networking/Firewall_128x128.png;dashed=1;dashPattern=1 1;fillColor=#FFF9EB;" parent="1" vertex="1">
-          <mxGeometry x="1009" y="968" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="J3lZyu1eDa4s-xxv6yae-1" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#277116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.file_system;" parent="1" vertex="1">
           <mxGeometry x="1001" y="685.7" width="78" height="73" as="geometry" />
@@ -122,13 +110,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-4" value="Caddy as File Server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="780.3999999999999" y="230" width="177" height="20" as="geometry" />
+          <mxGeometry x="768.3999999999999" y="230" width="177" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-5" value="Caddy as Reverse Proxy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="780.4" y="475.5" width="177" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-8" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#277116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.file_system;" vertex="1" parent="1">
-          <mxGeometry x="829.9" y="350" width="78" height="73" as="geometry" />
+          <mxGeometry x="808" y="360" width="78" height="73" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-9" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="5tZSmuqax2kPrNc6n6yo-11" target="5tZSmuqax2kPrNc6n6yo-8">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -137,22 +125,22 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-11" value="Site-2.com" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="350" y="636.5" width="180" height="18" as="geometry" />
+          <mxGeometry x="380" y="588.5" width="180" height="18" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-12" value="php-site.com" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="350" y="671" width="180" height="18" as="geometry" />
+          <mxGeometry x="380" y="619.5" width="180" height="18" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-10" value="Site-1.com" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="350" y="600" width="180" height="18" as="geometry" />
+          <mxGeometry x="380" y="558" width="180" height="18" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="5tZSmuqax2kPrNc6n6yo-13" target="5tZSmuqax2kPrNc6n6yo-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-13" value="node-site.com" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="350" y="703.7" width="180" height="18" as="geometry" />
+          <mxGeometry x="380" y="650" width="180" height="18" as="geometry" />
         </mxCell>
         <mxCell id="5tZSmuqax2kPrNc6n6yo-14" value="wordpress-site.com" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="350" y="738" width="180" height="18" as="geometry" />
+          <mxGeometry x="380" y="680" width="180" height="18" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
