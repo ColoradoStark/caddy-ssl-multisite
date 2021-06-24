@@ -16,5 +16,3 @@ tar -xvf websites.tar
 
 rm websites.tar
 
-docker-compose up
-
