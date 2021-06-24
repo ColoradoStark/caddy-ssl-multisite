@@ -28,7 +28,7 @@ After the passwords have been set, enter the following command:
 
 That is all you need to do to get the server running. Now you will need to enter the container and edit the config file to match your site names. Type the following command:
 
-```docker container exec -it caddy-multisite-server sh```
+```docker container exec -it caddy_caddy_1 sh```
 
 ```cd /etc/caddy```
 
