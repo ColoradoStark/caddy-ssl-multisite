@@ -10,7 +10,8 @@ DEPENDENCIES: Server with docker installed, 2 domains pointed at the server runn
 
 ## Instructions
  
-#### IMPORTANT!!! set the passwords in the two .env files - WORDPRESS_DB_PASSWORD and  MYSQL_ROOT_PASSWORD must be the same
+#### IMPORTANT!!! set the passwords in the two .env files. 
+#### NOTE: WORDPRESS_DB_PASSWORD and  MYSQL_ROOT_PASSWORD must be the same password.
 
 
 After the passwords have been set, enter the following command:
