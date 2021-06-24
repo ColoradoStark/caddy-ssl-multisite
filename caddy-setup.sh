@@ -1,5 +1,9 @@
 #!/bin/bash
 
+mkdir caddy
+
+cd caddy
+
 wget https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/docker-compose.yml
 
 wget https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/websites.tar
