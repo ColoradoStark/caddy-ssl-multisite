@@ -42,7 +42,7 @@ Your sites should now be working over HTTP.  To switch to HTTPS just remove the 
 
 Wordpress is a little more tricky because you need to make sure that wordpress also knows it is on HTTPS otherwise it will try and load images from HTTP over HTTPS which will throw a big warning in the visitors browser make sure wordpress root URL is also set to HTTPS.  See image below:
 
-
+![Wordpress](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/Wordpress-SSL-https.jpg)
 
 Also, You will now have 2 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directories are synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to ever access the containers directly.  
 
