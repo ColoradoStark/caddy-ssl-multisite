@@ -13,6 +13,10 @@ This repo also contains the source dockerfile used to build the docker container
 enter the following command
 
 ```wget -qO - https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/caddy-setup.sh | bash```
+
+when the script finishes executing enter:
+
+```cd caddy```
  
 you should now have some folders and two .env files in your current directory.
 #### IMPORTANT!!! set the passwords in the two .env files. 
