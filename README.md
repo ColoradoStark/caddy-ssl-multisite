@@ -6,7 +6,7 @@ A web server stark that will run multiple web sites over ssl.  It will automatic
 
 This repo also contains the source dockerfile used to build the docker container coloradostark/caddy-ssl-multisite, which is based on Caddy. Caddy is an open source web server with automatic HTTPS written in Go.   
 
-![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/caddy.jpg)
+![Diagram](https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/master/diagram-v0-22.jpg)
 
 ## Instructions
 
@@ -46,4 +46,6 @@ NOTE: If you plan to add a large number of domains, be mindful that Let's Encryp
 
 https://letsencrypt.org/docs/rate-limits/
 
-![Diagram](https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/master/diagram-v0-22.jpg)
+Project Based On Caddy
+
+![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/caddy.jpg)
