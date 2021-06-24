@@ -4,12 +4,12 @@ localhost {
         file_server browse
 }
 
-http://static-site1.com {
+http://site1.com {
         root * /var/www/site_1
         file_server
 }
 
-http://static-site2.com {
+http://site2.com {
         root * /var/www/site_2
         file_server
 }
