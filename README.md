@@ -2,11 +2,9 @@
 
 ![Version](https://img.shields.io/github/v/release/ColoradoStark/caddy-ssl-multisite)
 
-A web server stark that will run multiple web sites over ssl and manage the certificates for you.  Default configuration will setup websites with Wordpress, a blank NodeJS server, a blank PHP 7.4 server, and 2 file servers.  But you can modify the config file to run as many websites as you want.  
+A web server stark that will run multiple web sites over ssl.  It will automatically get Let's Encrypt free SSL certificates, and automatically update them for you.  The default configuration will setup 5 websites: Wordpress, a blank NodeJS server, a blank PHP 7.4 server, and 2 file servers.  But you can modify the config file to run as many websites as you want.  
 
-This repo also contains the source dockerfile used to build the docker container coloradostark/caddy-ssl-multisite. 
-
-Caddy is an open source web server with automatic HTTPS written in Go. It will automatically get Let's Encrypt free SSL certificates, and automatically update them for you.  
+This repo also contains the source dockerfile used to build the docker container coloradostark/caddy-ssl-multisite, which is based on Caddy. Caddy is an open source web server with automatic HTTPS written in Go.   
 
 ![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/caddy.jpg)
 
