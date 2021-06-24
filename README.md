@@ -24,7 +24,7 @@ you should now have some folders and two .env files in your current directory.
 
 After the passwords have been set, enter the following command:
 
-```docker-compose up```
+```docker-compose up -d```
 
 That is all you need to do to get the server running. Now you will need to enter the container and edit the config file to match your site names. Type the following command:
 
