@@ -25,5 +25,5 @@ http://node-site.com {
 }
 
 http://www.wordpress-site.com {
-	reverse_proxy hipster_axe_wordpress_1:80
+	reverse_proxy wordpress:80
 }
