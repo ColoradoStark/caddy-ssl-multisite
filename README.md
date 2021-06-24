@@ -9,10 +9,11 @@ DEPENDENCIES: Server with docker installed, 2 domains pointed at the server runn
 ![Screenshot](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/caddy.jpg)
 
 ## Instructions
+ 
+#### IMPORTANT!!! set the passwords in the two .env files - WORDPRESS_DB_PASSWORD and  MYSQL_ROOT_PASSWORD must be the same
 
-First change the working directory of your server to the directory that you want to sync to the caddy server's web directory (i.e. /home/user/somedirectory).  
-#### IMPORTANT!!! Do not use your home directory, create a new folder and enter that folder or YOU WILL BE LOCKED OUT of the server. 
-From that directory enter the following command:
+
+enter the following command:
 
 ```wget -qO - https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/caddy-setup.sh | bash```
 
