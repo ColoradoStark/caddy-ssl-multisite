@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   caddy:
-    image: coloradostark/caddy-ssl-multisite
+    image: coloradostark/caddy-ssl-multisite:0.22
     ports:
       - "80:80"
       - "443:443"
