@@ -13,7 +13,7 @@ DEPENDENCIES: Server with docker installed, 2 domains pointed at the server runn
 #### IMPORTANT!!! set the passwords in the two .env files - WORDPRESS_DB_PASSWORD and  MYSQL_ROOT_PASSWORD must be the same
 
 
-enter the following command:
+After the passwords have been set, enter the following command:
 
 ```wget -qO - https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/caddy-setup.sh | bash```
 
