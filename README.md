@@ -14,7 +14,7 @@ enter the following command
 
 ```wget -qO - https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/main/caddy-setup.sh | bash```
  
-you should now have two .env files in your current directory.
+you should now have some folders and two .env files in your current directory.
 #### IMPORTANT!!! set the passwords in the two .env files. 
 #### NOTE: WORDPRESS_DB_PASSWORD and  MYSQL_ROOT_PASSWORD must be the same password.
 
