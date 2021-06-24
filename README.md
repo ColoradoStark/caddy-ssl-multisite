@@ -42,4 +42,4 @@ NOTE: If you plan to add a large number of domains, be mindful that Let's Encryp
 
 https://letsencrypt.org/docs/rate-limits/
 
-![Diagram](https://github.com/ColoradoStark/caddy-ssl-multisite/raw/master/diagram.jpg)
+![Diagram](https://raw.githubusercontent.com/ColoradoStark/caddy-ssl-multisite/master/diagram-v0-22.jpg)
