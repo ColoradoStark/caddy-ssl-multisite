@@ -24,6 +24,6 @@ http://node-site.com {
         reverse_proxy node-server:8080
 }
 
-http://www.wordpress-site.com {
+http://wordpress-site.com {
 	reverse_proxy wordpress:80
 }
