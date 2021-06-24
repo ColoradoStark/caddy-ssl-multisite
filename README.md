@@ -40,7 +40,11 @@ That will give you access to the config file using the vi editor. https://www.cs
 
 Your sites should now be working over HTTP.  To switch to HTTPS just remove the http:// from the caddy config file, and reload again.  When you do this Caddy will fetch free certs for you and manage HTTPS going forward.  After reloading, it may take a few minutes for everything to be installed and verified by the CA.
 
-Also, You will now have 2 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directories are synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to ever access the containers directly.  You can add as many sites as you want by creating folders and adding the folder to the config file. 
+Wordpress is a little more tricky because you need to make sure that wordpress also knows it is on HTTPS otherwise it will try and load images from HTTP over HTTPS which will throw a big warning in the visitors browser make sure wordpress root URL is also set to HTTPS.  See image below:
+
+
+
+Also, You will now have 2 folders in your directory which will sync to the path of /var/www on your caddy server. Because the directories are synced, you can upload your sites using FTP, SFTP, Bamboo, Jenkins or whatever method you prefer. Without needing to ever access the containers directly.  
 
 NOTE: If you plan to add a large number of domains, be mindful that Let's Encrypt has rate limits. For more info on Let's encrypt rate limits see the following:
 
