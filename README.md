@@ -34,6 +34,7 @@ That is all you need to do to get the server running. Now you will need to enter
 
 ```vi Caddyfile```
 
+
 That will give you access to the config file using the vi editor. https://www.cs.colostate.edu/helpdocs/vi.html Change the name of the websites to your domains. Quit and save. and then type the following:
 
 ```caddy reload```
