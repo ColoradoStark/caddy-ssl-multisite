@@ -39,7 +39,7 @@ services:
     env_file:
       - wp-variables.env
     volumes:
-      - ./wp-content:/var/www/html/wp-content     
+      - ./wordpress:/var/www/html   
 volumes:
   www-data:
     driver: local
